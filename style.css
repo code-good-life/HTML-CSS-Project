@@ -20,6 +20,34 @@ div.blocksP {
     width: 100%;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+div.callC {
+    background-color: rgb(144, 212, 248);
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+div.emailC {
+    background-color: rgb(144, 212, 248);
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+
+div.smsC {
+    background-color: rgb(144, 212, 248);
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+}
+
 
 div.tsP {
     background-color: rgb(144, 212, 248);
@@ -37,6 +65,18 @@ footer {
 
 }
 
+h3.callhC {
+    color: rgb(239, 129, 148);
+}
+
+h3.emailhC {
+    color: rgb(239, 129, 148);
+}
+
+h3.smshC {
+    color: rgb(239, 129, 148);
+}
+
 
 html {
     background-color: rgb(20, 8, 13);
@@ -48,6 +88,24 @@ img.astroImageA {
     float: left;
     margin: 25px;
     width: 450px;
+}
+
+img.callImageC {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+img.emailImageC {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+img.smsImageC {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
 }
 
 
@@ -86,4 +144,8 @@ td.btd2P {
     border :1px outset orchid;
 }
 
-
+@media (max-width: 900px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}
